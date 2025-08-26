@@ -7,11 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './soma.css'
 })
 export class Soma {
-
-  valor = 0
+  valor = 0;
 
   somar(){
     this.valor = this.valor + 1;
   }
-
 }

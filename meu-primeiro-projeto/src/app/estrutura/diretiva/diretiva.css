@@ -1,0 +1,30 @@
+html {
+    text-align: center;
+}
+
+.ativo {
+    color: blue;
+    font-style: bold;
+}
+
+.inativo {
+    color: red;
+
+}
+
+
+.botao2 {
+    margin-left: 35px;
+    margin-right: 50px;
+    height: 25px;
+    width: 25px;
+}
+
+
+ul {
+    list-style-position: inside;
+    text-indent: 0;
+    margin-left: 0;
+    padding-left: 0;
+
+}

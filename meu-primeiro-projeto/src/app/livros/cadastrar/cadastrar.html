@@ -1,7 +1,27 @@
-<p>Componente de Cadastro de Livros!</p>
+<p>Componente de Cadastrar Livros</p>
 
-<h1> Bem Vindo {{nome}} </h1>
+<h1> Bem vindo {{nome}} </h1>
 
-<img [src]="caminhoImagem" width="300" height="300" >
+<img [src]='caminhoImagem' width="300" height="300">
 
-<button (click)="dizerOi()">Clique Aqui</button>
+<div></div>
+
+<p *ngIf="mostrarMensagem">Esta mensagem é exibida condicionalmente</p>
+<button (click)="toggleMensagem()">Alternar mensagem</button>
+
+<div></div>
+<button (click)='dizerOi()'>Mensagem</button>
+
+<div></div>
+
+<ul>
+    <li *ngFor="let item of listaItens">{{ item }}</li>
+</ul>
+
+<div [ngClass]="{'destaque': isDestaque, 'erro': hasError}">
+    Este elemento tem classes dinâmicas
+</div>
+
+<div [ngStyle]="{'background-color': corFundo, 'font-size': tamanhoFonte}">
+    Este elemento tem classes dinâmicas
+</div>
