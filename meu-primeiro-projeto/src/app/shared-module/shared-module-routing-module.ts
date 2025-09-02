@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Estoque } from './estoque/estoque';
+import { BotaoComponent } from './botao-component/botao-component';
 
-const routes: Routes = [
-  {path: 'estoque', component: Estoque}
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ProdutosRoutingModule { }
+export class SharedModuleRoutingModule { }

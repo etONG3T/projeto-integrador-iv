@@ -1,11 +1,20 @@
 <html>
+  <h1>Catálogo de Proutos</h1>
 
-<p>estoque works!</p>
-
-<ul>
-    <li *ngFor="let item of produtos">
-        {{ item.nome }} - {{ item.preco }} - {{ item.estoque }}
-    </li>
-</ul>
-
+  <h3>Nome - Preço - Estoque - Disponibilidade</h3>
+  <ul>
+      <li *ngFor='let produto of produtos' [ngClass]="{'disponivel': produto.estoque, 'indisponivel': !produto.estoque}">
+        <span>{{ produto.nome }} </span><span>-</span>
+        <span [ngStyle]="{'color': produto.preco > 2000 ? 'blue' : 'black'}">{{ produto.preco }} </span><span>-</span>
+        <span>{{ produto.estoque }} </span><span>-</span>
+        <span><span *ngIf="produto.estoque > 0; else indisponivel">
+          (Disponível)
+        </span>
+        <ng-template #indisponivel>
+          (Indisponível)
+        </ng-template></span>
+      </li>
+  </ul>
+  <button (click)='aumentarPrecos()'>Aumentar preços em 10%</button>
+  <button (click)='diminuirPrecos()'>Diminuir preços em 10%</button>
 </html>

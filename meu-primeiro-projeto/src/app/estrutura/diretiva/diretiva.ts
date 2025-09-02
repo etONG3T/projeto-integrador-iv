@@ -14,19 +14,19 @@ export class Diretiva {
   }
 
   listaItens = [
-    { id: '001', nome: 'Gabriel', ativo: true },
-    { id: '002', nome: 'Volpe', ativo: false },
-    { id: '003', nome: 'Luiz', ativo: true },
-    { id: '004', nome: 'Possarle', ativo: false }
+    {id: '1', nome: 'Volpe', ativo: true},
+    {id: '2', nome: 'Gabriel', ativo: false},
+    {id: '3', nome: 'Luiz', ativo: true},
+    {id: '4', nome: 'Maria Eloiza', ativo: false}
   ];
 
-  tamanhoFonte = 15;
+    tamanhoFonte = 15;
 
-  aumentarFonte() {
-    this.tamanhoFonte = this.tamanhoFonte + 1;
-  }
+    aumentarFonte() {
+      this.tamanhoFonte = this.tamanhoFonte + 1;
+    }
 
-  diminuirFonte() {
-    this.tamanhoFonte = this.tamanhoFonte - 1;
-  }
+    diminuirFonte(){
+      this.tamanhoFonte = this.tamanhoFonte - 1;
+    }
 }

@@ -1,0 +1,27 @@
+html{
+    text-align: center;
+}
+
+.disponivel{
+    color: green;
+}
+
+.indisponivel{
+    color: red;
+    font-style: italic;
+}
+
+ul{
+    list-style-position: inside;
+    text-indent: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+span{
+    padding: 10px;
+}
+
+button{
+    margin: 10px;
+}

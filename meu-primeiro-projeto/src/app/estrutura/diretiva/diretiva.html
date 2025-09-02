@@ -1,15 +1,16 @@
 <html>
 <button class="botao1" (click)="mostrarOcultar()">Mostrar/Ocultar</button>
 <div *ngIf="conteudo">
+    <p>ID - Nome - Status</p>
+    <p>--------------------------------------------------------------------------------------------</p>
     <ul>
-        <p>ID - Nome - Status</p>
-        <p>--------------------------------------------------------------------------------------------</p>
-        <li *ngFor="let item of listaItens" [ngStyle]="{'font-size': tamanhoFonte + 'px'}"
-            [ngClass]="{'ativo': item.ativo, 'inativo': !item.ativo}">{{ item.id}} - {{ item.nome }} - {{ item.ativo }}
+        <li *ngFor="let item of listaItens" [ngStyle]="{'font-size': tamanhoFonte + 'px'}">
+            {{ item.id}} - {{ item.nome }} - 
+            <span [ngClass]="{'ativo': item.ativo, 'inativo': !item.ativo}">{{ item.ativo ? 'Ativo' : 'Inativo'}}</span>
         </li>
     </ul>
+    <button (click)='aumentarFonte()' class="botao2" >+</button>
+    <button (click)='diminuirFonte()' class="botao2" >-</button>
 </div>
-<button (click)='aumentarFonte()' class="botao2">+</button>
-<button (click)='diminuirFonte()' class="botao2">-</button>
 
 </html>
