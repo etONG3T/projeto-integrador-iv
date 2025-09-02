@@ -1,7 +1,7 @@
-<p>Componente de Cadastrar Livros</p>
+<p>teste de componentes!</p>
 
 <mat-toolbar style="background-color: bisque;">
-  <span>My Application</span>
+  <span>Minha aplicação</span>
 </mat-toolbar>
 
 <mat-card class="example-card" appearance="outlined">
@@ -23,29 +23,3 @@
     <button matButton>SHARE</button>
   </mat-card-actions>
 </mat-card>
-
-<h1> Bem vindo {{nome}} </h1>
-
-<img [src]='caminhoImagem' width="300" height="300">
-
-<div></div>
-
-<p *ngIf="mostrarMensagem">Esta mensagem é exibida condicionalmente</p>
-<button (click)="toggleMensagem()">Alternar mensagem</button>
-
-<div></div>
-<button (click)='dizerOi()'>Mensagem</button>
-
-<div></div>
-
-<ul>
-    <li *ngFor="let item of listaItens">{{ item }}</li>
-</ul>
-
-<div [ngClass]="{'destaque': isDestaque, 'erro': hasError}">
-    Este elemento tem classes dinâmicas
-</div>
-
-<div [ngStyle]="{'background-color': corFundo, 'font-size': tamanhoFonte}">
-    Este elemento tem classes dinâmicas
-</div>

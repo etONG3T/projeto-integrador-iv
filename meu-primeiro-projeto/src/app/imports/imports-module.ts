@@ -1,21 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { LivrosRoutingModule } from './livros-routing-module';
-import { Cadastrar } from './cadastrar/cadastrar';
+import { ImportsRoutingModule } from './imports-routing-module';
+import { Components } from './components/components';
+
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 
+
 @NgModule({
   declarations: [
-    Cadastrar
+    Components
   ],
   imports: [
     CommonModule,
-    LivrosRoutingModule,
+    ImportsRoutingModule,
     MatToolbarModule,
     MatCardModule
-  ],
-  
+  ]
 })
-export class LivrosModule { }
+export class ImportsModule { }
