@@ -8,6 +8,9 @@ import { ProdutosModuleModule } from './produtos-module/produtos-module-module';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 
+import {MatTableModule} from '@angular/material/table';
+
+
 @NgModule({
   declarations: [
     App
@@ -17,7 +20,8 @@ import {MatCardModule} from '@angular/material/card';
     AppRoutingModule,
     ProdutosModuleModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
